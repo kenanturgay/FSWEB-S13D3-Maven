@@ -4,6 +4,8 @@ public class Person {
     String firstName;
     String lastName;
     int age;
+    double height;
+    double weight;
 
 
     // Default constructor
@@ -11,6 +13,12 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    public Person(String firstName, String lastName, int age, double height, double weight ) {
+        this(firstName,lastName,age);
+        this.weight=weight;
+        this.height=height;
     }
 
 
